@@ -1,6 +1,6 @@
 <?php
 //connect to MySQL
-$db = mysqli_connect('localhost', 'root', 'Root') or die ('Unable to connect. Check your connection parameters.');
+$db = mysqli_connect('localhost', 'root', 'root') or die ('Unable to connect. Check your connection parameters.');
 
 //create the main database if it doesn't already exist
 $query = 'CREATE DATABASE IF NOT EXISTS moviesite'; 

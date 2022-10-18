@@ -4,6 +4,12 @@ $db = mysqli_connect('localhost', 'root', 'Root') or die ('Unable to connect. Ch
 //make sure you're using the correct database
 mysqli_select_db($db,'moviesite') or die(mysqli_error($db));
 
+/*$query = 'ALTER TABLE movie
+        ADD CONSTRAINT FK_movie_leadactor FOREIGN KEY (movie_leadactor)
+        REFERENCES people (people_id)';
+mysql_query($db,$query) or die (mysql_error($db));
+echo "Relationship created successfully"
+*/
 //QUERY PARA BUSCAR EL ACTOR DE CADA PELICULA
 echo "SHOW THE NAME OF THE LEAD ACTOR FOR EACH MOVIE:";
 echo  '<br>';

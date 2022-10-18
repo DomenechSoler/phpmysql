@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost', 'root', 'Root') or die ('Unable to connect. Check your connection parameters.'); 
+$db = mysqli_connect('localhost', 'root', 'root') or die ('Unable to connect. Check your connection parameters.'); 
 mysqli_select_db($db,'moviesite') or die(mysqli_error($db));
 
 // select the movie titles and their genre after 1990
